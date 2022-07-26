@@ -1,0 +1,86 @@
+
+body {
+    overflow-x: hidden;
+    background-color: #9653ac;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: white;
+}
+
+.navbar{
+    border-bottom: 1px solid white;
+}
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+#animated_heading {
+  line-height: 5rem;
+  word-spacing: 1.25rem;
+  color: white;
+  transition: 3.5s;
+  transform: scale(0.75);
+  font-weight: 700;
+}
+
+
+.try-yourself {
+  box-shadow: 2px 5px 100px whitesmoke;
+  transition: 0.3s;
+}
+.try-yourself:hover {
+  box-shadow: 2px 10px 50px white;
+}
+
+/* Gallery */
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column img {
+  box-shadow: 1px 1px 10px white;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.downloadImage-row{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.downloadImage{
+  width: 25%;
+  margin-right: 30px;
+  float: left;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #animated_heading{
+      word-spacing: normal;
+      text-align: center;
+  }
+}
